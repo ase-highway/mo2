@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+
+    <div class="title-main-wrap">
+      <div class="title">
+        <div class="left">
+          <button type="button" class="btn-prev"></button>
+        </div>
+        <h1 class="title-main">즉시배송</h1>
+      </div>
+    </div>    
+
+    <!-- container -->
+    <div class="container">
+      <main class="content">
+
+        <div class="instant-delivery-wrap">
+            <div class="time-count-wrap">
+              <strong class="time-count-tit">남은 시간</strong>
+              <div class="time-count">
+                <div class="time-box day">
+                  <span class="num">17</span><span class="unit">days</span>
+                </div>
+                <span class="colon"></span>
+                <div class="time-box">
+                  <span class="num">05</span>
+                </div>
+                <span class="colon"></span>
+                <div class="time-box">
+                  <span class="num">26</span>
+                </div>
+                <span class="colon"></span>
+                <div class="time-box">
+                  <span class="num">35</span>
+                </div>
+              </div>
+            </div>
+            <div class="category-wrap">
+              <div class="category-selc">
+                <select name="" id=""><option value="">농산/정육/수산(48)</option></select>
+                <button type="button" class="btn-refresh"></button>
+              </div>
+              <div class="sub-category">
+                <ul class="sub-list">
+                  <li><a href="javascript:void(0);">과일/견과<em>(8)</em></a></li>
+                  <li><a href="javascript:void(0);">정육/계란<em>(17)</em></a></li>
+                  <li><a href="javascript:void(0);">채소<em>(13)</em></a></li>
+                  <li><a href="javascript:void(0);">쌀/잡곡<em>(1)</em></a></li>
+                  <li><a href="javascript:void(0);">수산/건어<em>(9)</em></a></li>
+                </ul>
+              </div>
+            </div>
+
+          <div class="data-top">
+                <select class="no-line">
+                  <option selected="selected">추천순</option>
+                  <option>낮은가격순</option>
+                  <option>높은가격순</option>
+                  <option>상품평순</option>
+                  <option>등록일순</option>
+              </select>
+            </div>
+
+          <!-- product-list -->
+          <div class="product-list">
+            <ul>
+              <li>
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <div class="item-tag">
+                      <span class="direct-delivery sm">즉시 배송</span>
+                    </div>
+                    
+                    <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-1.jpg" alt="오뚜기 진 사골곰탕 500g"></a>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>오뚜기 진 사골곰탕 500g</span></strong>
+                      <span class="item-name-sub">유료회원가 8,950원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price"><span>1,000<span class="unit">원</span></span></strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                  <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                </div>
+              </li>
+              <li>
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <div class="item-tag">
+                      <span class="direct-delivery sm">즉시 배송</span>
+                    </div>
+                    <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-2.jpg" alt="풀무원 비법기름 계란볶음밥 400g"></a>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>풀무원 비법기름 계란볶음밥 400g</span></strong>
+                      <span class="item-name-sub">유료회원가 8,950원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price"><span>1,000<span class="unit">원</span></span></strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                  <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                </div>
+              </li>
+              <li>
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <div class="item-tag">
+                      <span class="direct-delivery sm">즉시 배송</span>
+                    </div>
+                    <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-3.jpg" alt="폰타나 링귀니 파스타면 100g"></a>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>폰타나 링귀니 파스타면 100g</span></strong>
+                      <span class="item-name-sub">유료회원가 8,950원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price"><span>1,000<span class="unit">원</span></span></strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                  <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                </div>
+              </li>
+              <li>
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <div class="item-tag">
+                      <span class="direct-delivery sm">즉시 배송</span>
+                    </div>
+                    <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-4.jpg" alt="풀무원 저당 오리엔탈 드레싱 240g"></a>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>풀무원 저당 오리엔탈 드레싱 240g</span></strong>
+                      <span class="item-name-sub">유료회원가 8,950원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price"><span>1,000<span class="unit">원</span></span></strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                  <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                </div>
+              </li>
+              <li>
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <div class="item-tag">
+                      <span class="direct-delivery sm">즉시 배송</span>
+                    </div>
+                    <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-5.jpg" alt="리콜라 캔디 오리지널 40g"></a>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>리콜라 캔디 오리지널 40g</span></strong>
+                      <span class="item-name-sub">유료회원가 8,950원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price"><span>1,000<span class="unit">원</span></span></strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                  <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                </div>
+              </li>
+              <li>
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <div class="item-tag">
+                      <span class="direct-delivery sm">즉시 배송</span>
+                    </div>
+                    <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-6.jpg" alt="토레타 500ml"></a>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>토레타 500ml</span></strong>
+                      <span class="item-name-sub">유료회원가 8,950원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price"><span>1,000<span class="unit">원</span></span></strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                  <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                </div>
+              </li>
+              <li>
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <div class="item-tag">
+                      <span class="direct-delivery sm">즉시 배송</span>
+                    </div>
+                    <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-7.jpg" alt="츄파츕스 샤워 크롤러 60g"></a>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>츄파츕스 샤워 크롤러 60g</span></strong>
+                      <span class="item-name-sub">유료회원가 8,950원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price"><span>1,000<span class="unit">원</span></span></strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+                  <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                </div>
+              </li>
+              <li>
+                <div class="item-cont">
+                  <div class="item-photo-box">
+                    <div class="item-tag">
+                      <span class="direct-delivery sm">즉시 배송</span>
+                    </div>
+                    <a href="javascript:void(0);"><img src="../images/temp/temp-flyer-8.jpg" alt="매일 바이오 무가당 플레인 그릭 요거트 34g"></a>
+                  </div>
+                  <a href="javascript:void(0);" class="item-info-cont">
+                    <div class="item-tit-box">
+                      <strong class="item-name"><span>매일 바이오 무가당 플레인 그릭 요거트 34g</span></strong>
+                      <span class="item-name-sub">유료회원가 8,950원</span>
+                      <span class="fixed-price">12,800원</span>
+                    </div>
+                    <div class="item-money-box">
+                      <span class="sale-rate"><span><b>55</b></span><em>%</em></span>
+                      <strong class="item-price"><span>1,000<span class="unit">원</span></span></strong>
+                    </div>
+                    <div class="item-grade">
+                      <span class="star">★★★★★</span>
+                      <span class="num">5</span>
+                      <span class="cnt">21건</span>
+                    </div>
+                  </a>
+
+                  <button class="btn-menu"><i class="ico-cart"></i><span>장바구니 담기</span></button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- // product-list -->
+          <div class="btn-more-wrap">
+            <a href="javascript:void(0);" class="btn-more"><span>더보기</span></a>
+          </div>
+
+          
+        </div>
+
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+
+
+
+
+
+    <!-- layer-bottom-popup -->
+    <section class="layer-bottom-popup" id="pop-cart-add">
+      <div class="dim"></div>
+      <div class="pop-wrap">
+        <div class="popup">
+          <div class="pop-body">
+            <div class="product-ordering">
+              <div class="ordering-box">
+                <div class="ordering-head" onclick="btmPopClose('#pop-cart-add');">
+                  <span class="tit"><i class="ico-order-cart" aria-hidden="true"></i>즉시배송 장바구니</span>
+                  <i class="ico-arrow" aria-hidden="true"></i>
+                </div>
+                <ul class="ordering-list">
+                  <li>
+                    <div class="qty-area">
+                      <button type="button" class="btn-qty minus"></button>
+                      <input type="number" class="qty" value="2" title="수량">
+                      <button type="button" class="btn-qty plus"></button>
+                    </div>
+                    <p class="name">감귤 5kg/박스</p>
+                    <button type="button" class="btn-del"></button>
+                  </li>
+                  <li>
+                    <div class="qty-area">
+                      <button type="button" class="btn-qty minus"></button>
+                      <input type="number" class="qty" value="2" title="수량">
+                      <button type="button" class="btn-qty plus"></button>
+                    </div>
+                    <p class="name">감귤 5kg/박스</p>
+                    <button type="button" class="btn-del"></button>
+                  </li>
+                  <li>
+                    <div class="qty-area">
+                      <button type="button" class="btn-qty minus"></button>
+                      <input type="number" class="qty" value="2" title="수량">
+                      <button type="button" class="btn-qty plus"></button>
+                    </div>
+                    <p class="name">감귤 5kg/박스</p>
+                    <button type="button" class="btn-del"></button>
+                  </li>
+                  <li>
+                    <div class="qty-area">
+                      <button type="button" class="btn-qty minus"></button>
+                      <input type="number" class="qty" value="2" title="수량">
+                      <button type="button" class="btn-qty plus"></button>
+                    </div>
+                    <p class="name">감귤 5kg/박스</p>
+                    <button type="button" class="btn-del"></button>
+                  </li>
+                  <li>
+                    <div class="qty-area">
+                      <button type="button" class="btn-qty minus"></button>
+                      <input type="number" class="qty" value="2" title="수량">
+                      <button type="button" class="btn-qty plus"></button>
+                    </div>
+                    <p class="name">감귤 5kg/박스</p>
+                    <button type="button" class="btn-del"></button>
+                  </li>
+                  <li>
+                    <div class="qty-area">
+                      <button type="button" class="btn-qty minus"></button>
+                      <input type="number" class="qty" value="2" title="수량">
+                      <button type="button" class="btn-qty plus"></button>
+                    </div>
+                    <p class="name">감귤 5kg/박스</p>
+                    <button type="button" class="btn-del"></button>
+                  </li>
+                </ul>
+                <div class="ordering-foot">
+                  <button type="button" class="btn-total">총 120,370원</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // layer-bottom-popup -->
+  </div>
+  <!-- // wrap -->
+
+  <script>
+  btmPopOpen('#pop-cart-add')
+</script>  
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+
+    <div class="title-main-wrap">
+      <div class="title">
+        <div class="left">
+          <button type="button" class="btn-prev"></button>
+        </div>
+        <h1 class="title-main">최근 본 상품</h1>
+      </div>
+    </div>
+
+    <!-- container -->
+    <div class="container">
+      <main class="content">
+        <div class="recent-list-wrap">
+          <div class="title-section">
+            <h2 class="tit"><span>최근 본 상품</span></h2>
+          </div>
+
+          <div class="data-top">
+            <label class="inp-chk">
+              <input type="checkbox" name="chk" data-evt="all-chk"><span class="ic"></span>
+              <span class="t">전체선택</span>
+            </label>
+          </div>
+          <!-- data-list2 -->
+          <div class="data-list2 type-favorite">
+            <ul>
+              <li>
+                <div class="check">
+                  <label class="inp-chk">
+                    <input type="checkbox" name="chk" checked><span class="ic"></span>
+                  </label>
+                </div>
+                <div class="order-product">
+                  <div class="img"><img src="../images/temp/temp-flyer-3.jpg" alt=""></div>
+                  <div class="desc">
+                    <div class="name">폰타나 스프레드 딸기 330g</div>
+                    <div class="price"><b><span class="val">3,790</span><span class="unit">원</span></b><span class="org">5,150원</span></div>
+                    <div class="order-num">
+                      <span class="delivery">무료배송</span>
+                      <span class="num">1개</span>
+                    </div>
+                    <div class="menu">
+                      <button type="button">옵션/수량변경</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check">
+                  <label class="inp-chk">
+                    <input type="checkbox" name="chk" checked><span class="ic"></span>
+                  </label>
+                </div>
+                <div class="order-product">
+                  <div class="img"><img src="../images/temp/temp-flyer-7.jpg" alt=""></div>
+                  <div class="desc">
+                    <div class="name">동원 고추참치(120g*2) + 살코기참치(120g*3) 기획</div>
+                    <div class="price"><b><span class="val">3,790</span><span class="unit">원</span></b><span class="org">5,150원</span></div>
+                    <div class="order-num">
+                      <span class="delivery">무료배송</span>
+                      <span class="num">1개</span>
+                    </div>
+                    <div class="menu">
+                      <button type="button">옵션/수량변경</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check">
+                  <label class="inp-chk">
+                    <input type="checkbox" name="chk" checked><span class="ic"></span>
+                  </label>
+                </div>
+                <div class="order-product">
+                  <div class="img"><img src="../images/temp/temp-flyer-1.jpg" alt=""></div>
+                  <div class="desc">
+                    <div class="name">오뚜기 로열라면 4입봉</div>
+                    <div class="price"><b><span class="val">4,790</span><span class="unit">원</span></b><span class="org">6,150원</span></div>
+                    <div class="order-num">
+                      <span class="delivery">무료배송</span>
+                      <span class="num">1개</span>
+                    </div>
+                    <div class="menu">
+                      <button type="button">옵션/수량변경</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check">
+                  <label class="inp-chk">
+                    <input type="checkbox" name="chk" checked><span class="ic"></span>
+                  </label>
+                </div>
+                <div class="order-product">
+                  <div class="img"><img src="../images/temp/temp-flyer-5.jpg" alt=""></div>
+                  <div class="desc">
+                    <div class="name">농심 라뽁구리 큰컵 1개입</div>
+                    <div class="price"><b><span class="val">2,790</span><span class="unit">원</span></b><span class="org">3,150원</span></div>
+                    <div class="order-num">
+                      <span class="delivery">무료배송</span>
+                      <span class="num">1개</span>
+                    </div>
+                    <div class="menu">
+                      <button type="button">옵션/수량변경</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check">
+                  <label class="inp-chk">
+                    <input type="checkbox" name="chk" checked><span class="ic"></span>
+                  </label>
+                </div>
+                <div class="order-product">
+                  <div class="img"><img src="../images/temp/temp-flyer-8.jpg" alt=""></div>
+                  <div class="desc">
+                    <div class="name">청정원 아마트리지아나 베이컨토마토 스파게티 소스 600g</div>
+                    <div class="price"><b><span class="val">6,790</span><span class="unit">원</span></b><span class="org">8,150원</span></div>
+                    <div class="order-num">
+                      <span class="delivery">무료배송</span>
+                      <span class="num">1개</span>
+                    </div>
+                    <div class="menu">
+                      <button type="button">옵션/수량변경</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="check">
+                  <label class="inp-chk">
+                    <input type="checkbox" name="chk" checked><span class="ic"></span>
+                  </label>
+                </div>
+                <div class="order-product">
+                  <div class="img"><img src="../images/temp/temp-flyer-2.jpg" alt=""></div>
+                  <div class="desc">
+                    <div class="name">농심 식물성 재료 가득 순라면(건면) 4개입</div>
+                    <div class="price"><b><span class="val">6,790</span><span class="unit">원</span></b><span class="org">8,150원</span></div>
+                    <div class="order-num">
+                      <span class="delivery">무료배송</span>
+                      <span class="num">1개</span>
+                    </div>
+                    <div class="menu">
+                      <button type="button">옵션/수량변경</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- // data-list2 -->
+          <!-- pagination -->
+          <div class="pagination">
+            <button type="button" class="btn-first" disabled></button>
+            <button type="button" class="btn-prev" disabled></button>
+            <ul>
+              <li class="on"><span>1</span></li>
+              <li><span>2</span></li>
+              <li><span>3</span></li>
+              <li><span>4</span></li>
+              <li><span>5</span></li>
+              <li><span>6</span></li>
+              <li><span>7</span></li>
+            </ul>
+            <button type="button"  class="btn-next"></button>
+            <button type="button" class="btn-last"></button>
+          </div>
+          <!-- // pagination -->
+
+          
+          <div class="btn-wrap">
+            <button type="button" class="btn-type1 st7 auto">선택 상품 삭제</button>
+            <button type="button" class="btn-type1 st1 auto">선택상품 장바구니</button>
+          </div>
+        </div>
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+  </div>
+  <!-- // wrap -->
+
+</body>
+</html>

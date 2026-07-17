@@ -1,0 +1,190 @@
+  <!-- header -->
+  <header class="header">
+    <h1 class="logo"><a href="/"><img src="../images/common/logo.png" alt="하이웨이마트"></a></h1>
+    <div class="header-menu">
+      <button type="button" class="btn-menu"></button>
+      <div class="right">
+        <ul class="user-menu">
+          <li>
+            <div class="top-search-form">
+							<i class="ico-search" id="btnGsSearch"></i>
+							<form>
+								<input type="text" placeholder="검색어를 입력해주세요">
+							</form>
+						</div>
+          </li>
+          <li><a href="javascript:void(0);"><i class="ico-user"></i></a></li>
+          <li><a href="javascript:void(0);"><i class="ico-cart"><span class="num">23</span></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+        
+    <!-- // total-search-layer -->
+    <nav class="gnb-menu">
+      
+      <ul>
+					<li><a href="javascript:void(0);">이벤트/쿠폰</a></li>
+					<li><a href="javascript:void(0);">자주구매</a></li>
+					<li><a href="javascript:void(0);">타임세일</a></li>
+					<li><a href="javascript:void(0);">전단상품</a></li>
+					<li><a href="javascript:void(0);">즉시배송</a></li>
+					<li><a href="javascript:void(0);">세일중</a></li>
+					<li><a href="javascript:void(0);">MD pick!</a></li>
+					<li><a href="javascript:void(0);">오늘의밥상</a></li>
+				</ul>
+    </nav>      
+  </header>
+  <!-- // header -->
+
+  <!-- category-menu-wrap -->
+  <aside class="category-menu-wrap">
+    <div class="menu-header">
+      <ul class="user-menu">
+        <li><a href="javascript:void(0);">로그아웃</a></li>
+        <li><a href="javascript:void(0);">마이페이지</a></li>
+      </ul>
+      <div class="right">
+        <button type="button" class="btn-barcode" onclick="popOpen('#pop-barcode');"></button>
+        <button type="button" class="btn-close"></button>
+      </div>
+    </div>
+    <!-- // menu-header -->
+     
+    <div class="txt-welcome">
+      <b>이재욱</b>님
+      <br>방문을 환영합니다.
+    </div>
+    <!-- <ul class="my-menu">
+      <li>
+        <a href="javascript:void(0);">
+          <span class="icon"><i class="ico-mileage"></i></span>
+          <span class="txt">마일리지</span>
+          <span class="number"><b class="num">73,230</b><span class="unit">원</span></span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <span class="icon"><i class="ico-coupon"></i></span>
+          <span class="txt">쿠폰</span>
+          <span class="number"><b class="num">0</b><span class="unit">장</span></span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <span class="icon"><i class="ico-favorite"></i></span>
+          <span class="txt">찜한상품</span>
+          <span class="number"><b class="num">3</b><span class="unit">개</span></span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">
+          <span class="icon"><i class="ico-view"></i></span>
+          <span class="txt">최근본상품</span>
+          <span class="number"><b class="num">1</b><span class="unit">개</span></span>
+        </a>
+      </li>
+    </ul> -->
+
+    <ul class="nav-tab-menu">
+      <li class="on"><a href="javascript:void(0);" data-tab-id="tab-category">카테고리</a></li>
+      <li><a href="javascript:void(0);" data-tab-id="tab-search">검색</a></li>
+    </ul>
+    <!-- 카테고리 탭 -->
+    <div id="tab-category" class="tab-content">
+      <ul class="cate-menu">
+        <li><a href="javascript:void(0);">농산/정육/수산</a>
+          <ul>
+            <li><a href="javascript:void(0);">과일/견과</a></li>
+            <li><a href="javascript:void(0);">정육/계란</a></li>
+            <li><a href="javascript:void(0);">두부/콩나물</a></li>
+            <li><a href="javascript:void(0);">채소</a></li>
+            <li><a href="javascript:void(0);">쌀/잡곡</a></li>
+            <li><a href="javascript:void(0);">수산/건어</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0);">유제품/냉장/냉동</a>
+          <ul>
+            <li><a href="javascript:void(0);">유제품/냉장</a></li>
+            <li><a href="javascript:void(0);">즉석식품/반찬/간식</a></li>
+            <li><a href="javascript:void(0);">베이커리/디저트</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0);">가공식품</a>
+          <ul>
+            <li><a href="javascript:void(0);">라면류/통조림</a></li>
+            <li><a href="javascript:void(0);">과자</a></li>
+            <li><a href="javascript:void(0);">생수/음료/얼음</a></li>
+            <li><a href="javascript:void(0);">커피/코코아/차</a></li>
+            <li><a href="javascript:void(0);">건강식품</a></li>
+            <li><a href="javascript:void(0);">수입식품</a></li>
+            <li><a href="javascript:void(0);">친환경/유기농</a></li>
+            <li><a href="javascript:void(0);">식자재(식품)</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0);">비식품</a>
+          <ul>
+            <li><a href="javascript:void(0);">화장지/생리대</a></li>
+            <li><a href="javascript:void(0);">세제/세탁/청소/욕실</a></li>
+            <li><a href="javascript:void(0);">유아용품</a></li>
+            <li><a href="javascript:void(0);">생활가전/문구</a></li>
+            <li><a href="javascript:void(0);">헤어/바디/뷰티</a></li>
+            <li><a href="javascript:void(0);">인테리어/반려</a></li>
+            <li><a href="javascript:void(0);">스포츠/잡화</a></li>
+            <li><a href="javascript:void(0);">식자재(생활용품)</a></li>
+            <li><a href="javascript:void(0);">일회용품/기타</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- 검색 탭 -->
+    <div id="tab-search" class="tab-content" style="display: none;">
+      <div class="inp-search">
+        <input type="text" placeholder="상품명 검색">
+        <butto class="btn-search"><i class="ico-search"></i></butto>
+      </div>
+    </div>
+
+    <dl class="commuity-list">
+      <dt>COMMUNYTY</dt>
+      <dd>
+        <ul>
+          <li><a href="javascript:void(0);">공지사항</a></li>
+          <li><a href="javascript:void(0);">고객센터</a></li>
+        </ul>
+      </dd>
+    </dl>
+    <!-- // commuity-list -->
+
+  </aside>
+  <!-- // category-menu-wrap -->
+
+  <div class="floating-menu">
+    <button type="button" class="btn-top" onclick="$(window).scrollTop(0);"></button>
+  </div>
+
+  <!-- 바코드 layer-popup -->
+  <section class="layer-popup type2" id="pop-barcode">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup">
+        <button type="button" class="close-wthie" onclick="popClose('#pop-barcode');"></button>
+        <div class="pop-body">
+          <div class="bar-code-box">
+            <div class="info">
+              <span class="name"><b>김현민</b><span class="unit">님</span></span>
+              <div class="etc-info">
+                <b>수지성복점</b>
+                <span>일반회원</span>
+              </div>
+            </div>
+            <div class="bar-code">
+              <img src="../images/temp/temp-bar-code.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // 바코드 layer-popup -->    
+     

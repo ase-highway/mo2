@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+
+  <link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+  <link type="text/css" rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../js/ui.js"></script>
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <script>
+      $.get("common/header.html", function (data) {
+        $(data).prependTo(".wrap");
+      });
+    </script>
+
+    <div class="title-main-wrap">
+      <div class="title">
+        <div class="left">
+          <button type="button" class="btn-prev"></button>
+        </div>
+        <h1 class="title-main">마일리지</h1>
+      </div>
+    </div>
+
+    <!-- container -->
+    <div class="container">
+      <main class="content">
+        <div class="title-section row">
+            <h2 class="tit"><span>사용가능 마일리지</span></h2>
+            <div class="right"><span class="mileage">15,050원</span></div>
+          </div>
+        <div class="date-setting-box">
+          <strong class="tit">조회기간</strong>
+          <div class="date-menu range-menu">
+            <label>
+              <input type="radio" name="btn_item" value="today"><span>오늘</span>
+            </label>
+            <label>
+              <input type="radio" name="btn_item" value="oneWeek"><span>7일</span>
+            </label>
+            <label>
+              <input type="radio" name="btn_item" value="fifteenDay"><span>15일</span>
+            </label>
+            <label>
+              <input type="radio" name="btn_item" value="oneMonth"><span>1개월</span>
+            </label>
+            <label>
+              <input type="radio" name="btn_item" value="threeMonth"><span>3개월</span>
+            </label>
+            <label data-init="checked">
+              <input type="radio" name="btn_item" value="oneYear"><span>1년</span>
+            </label>
+          </div>
+          <div class="input-calendar">
+            <div class="inp"><input type="text" class="datepicker start-date" readonly></div>
+            <div class="inp"><input type="text" class="datepicker end-date" readonly></div>
+            <button type="button" class="btn-search">조회</button>
+          </div>
+        </div>
+
+        <div class="history-list st-mileage type-mypage">
+          <div class="mileage-history-list">
+            <div class="mileage-item">
+              <div class="mileage-detail">
+                <p class="mileage-datetime">2026.06.18 13:09:25</p>
+                <ul>
+                  <li><span class="label">유형</span><span class="label-txt">포인트 사용 취소</span></li>
+                  <li><span class="label">주문번호</span><span class="label-txt">20252399-59485529</span></li>
+                  <li><span class="label">마일리지 내역</span><span class="label-txt">1,000</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mileage-item">
+              <p class="mileage-datetime">2026.06.18 13:09:25</p>
+              <div class="mileage-detail">
+                <ul>
+                  <li><span class="label">유형</span><span class="label-txt">포인트 사용 취소</span></li>
+                  <li><span class="label">주문번호</span><span class="label-txt">20252399-59485529</span></li>
+                  <li><span class="label">마일리지 내역</span><span class="label-txt">1,000</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mileage-item">
+              <p class="mileage-datetime">2026.06.18 13:09:25</p>
+              <div class="mileage-detail">
+                <ul>
+                  <li><span class="label">유형</span><span class="label-txt">포인트 사용 취소</span></li>
+                  <li><span class="label">주문번호</span><span class="label-txt">20252399-59485529</span></li>
+                  <li><span class="label">마일리지 내역</span><span class="label-txt">1,000</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mileage-item">
+              <p class="mileage-datetime">2026.06.18 13:09:25</p>
+              <div class="mileage-detail">
+                <ul>
+                  <li><span class="label">유형</span><span class="label-txt">포인트 사용 취소</span></li>
+                  <li><span class="label">주문번호</span><span class="label-txt">20252399-59485529</span></li>
+                  <li><span class="label">마일리지 내역</span><span class="label-txt">1,000</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mileage-item">
+              <p class="mileage-datetime">2026.06.18 13:09:25</p>
+              <div class="mileage-detail">
+                <ul>
+                  <li><span class="label">유형</span><span class="label-txt">포인트 사용 취소</span></li>
+                  <li><span class="label">주문번호</span><span class="label-txt">20252399-59485529</span></li>
+                  <li><span class="label">마일리지 내역</span><span class="label-txt">1,000</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mileage-item">
+              <p class="mileage-datetime">2026.06.18 13:09:25</p>
+              <div class="mileage-detail">
+                <ul>
+                  <li><span class="label">유형</span><span class="label-txt">포인트 사용 취소</span></li>
+                  <li><span class="label">주문번호</span><span class="label-txt">20252399-59485529</span></li>
+                  <li><span class="label">마일리지 내역</span><span class="label-txt">1,000</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mileage-item">
+              <p class="mileage-datetime">2026.06.18 13:09:25</p>
+              <div class="mileage-detail">
+                <ul>
+                  <li><span class="label">유형</span><span class="label-txt">포인트 사용 취소</span></li>
+                  <li><span class="label">주문번호</span><span class="label-txt">20252399-59485529</span></li>
+                  <li><span class="label">마일리지 내역</span><span class="label-txt">1,000</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mileage-item">
+              <p class="mileage-datetime">2026.06.18 13:09:25</p>
+              <div class="mileage-detail">
+                <ul>
+                  <li><span class="label">유형</span><span class="label-txt">포인트 사용 취소</span></li>
+                  <li><span class="label">주문번호</span><span class="label-txt">20252399-59485529</span></li>
+                  <li><span class="label">마일리지 내역</span><span class="label-txt">1,000</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mileage-item">
+              <p class="mileage-datetime">2026.06.18 13:09:25</p>
+              <div class="mileage-detail">
+                <ul>
+                  <li><span class="label">유형</span><span class="label-txt">포인트 사용 취소</span></li>
+                  <li><span class="label">주문번호</span><span class="label-txt">20252399-59485529</span></li>
+                  <li><span class="label">마일리지 내역</span><span class="label-txt">1,000</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mileage-item">
+              <p class="mileage-datetime">2026.06.18 13:09:25</p>
+              <div class="mileage-detail">
+                <ul>
+                  <li><span class="label">유형</span><span class="label-txt">포인트 사용 취소</span></li>
+                  <li><span class="label">주문번호</span><span class="label-txt">20252399-59485529</span></li>
+                  <li><span class="label">마일리지 내역</span><span class="label-txt">1,000</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- pagination -->
+        <div class="pagination">
+          <button type="button" class="btn-first" disabled></button>
+          <button type="button" class="btn-prev" disabled></button>
+          <ul>
+            <li class="on"><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+            <li><span>6</span></li>
+            <li><span>7</span></li>
+          </ul>
+          <button type="button"  class="btn-next"></button>
+          <button type="button" class="btn-last"></button>
+        </div>
+        <!-- // pagination -->
+
+      </main>
+      <!-- // content -->
+    </div>
+    <!-- // container -->
+
+    <script>
+      $.get("common/footer.html", function (data) {
+        $(data).appendTo(".wrap");
+      });
+    </script>
+
+  </div>
+  <!-- // wrap -->
+
+  
+</body>
+</html>
