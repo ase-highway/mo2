@@ -648,7 +648,7 @@ select.no-line { border: none; }
 .category-menu-wrap .tab-content .cate-menu > li { position: relative; }
 .category-menu-wrap .tab-content .cate-menu > li.has-menu:before { content: ""; display: block; position: absolute; top: 1.5rem; right: 0; width: 0.75rem; height: 0.4375rem; background: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.9626 0.51121C11.7895 0.064757 11.3318 -0.12376 10.9278 0.0849839C10.8689 0.115405 10.0078 0.993654 8.41978 2.6428L6.00146 5.15431L3.56067 2.62197C1.26202 0.237068 1.11297 0.0871796 1.0008 0.0472802C0.485494 -0.135989 -0.0365083 0.266658 0.0020087 0.817736C0.0240025 1.13224 -0.154796 0.929413 2.84973 4.0485C5.95187 7.26893 5.66686 7.0058 6.03335 6.98781C6.19527 6.97986 6.25656 6.96608 6.34596 6.91751C6.43026 6.8717 7.11447 6.17313 9.17471 4.02948C11.4745 1.63658 11.8997 1.18407 11.9408 1.08626C12.0102 0.920675 12.0201 0.659526 11.9626 0.51121Z' fill='%233C3C3C'/%3E%3C/svg%3E%0A") no-repeat 0 0; background-size: auto 100%; }
 .category-menu-wrap .tab-content .cate-menu > li.has-menu.on:before { transform: rotate(-180deg); top: 1.5625rem; }
-.category-menu-wrap .tab-content .cate-menu > li > a { display: flex; align-items: center; height: 3.375rem; font-size: 1.0625rem; font-weight: 700; }
+.category-menu-wrap .tab-content .cate-menu > li > a { display: flex; align-items: center; height: 3.375rem; font-size: 1.0625rem; font-weight: 700; position:relative; z-index: 1;}
 .category-menu-wrap .tab-content .cate-menu > li > ul { border-top: 1px solid #404040; }
 .category-menu-wrap .tab-content .cate-menu > li > ul { display: none; }
 .category-menu-wrap .tab-content .cate-menu > li > ul li a { padding: 0.625rem 0.75rem; display: flex; align-items: center; }
@@ -726,7 +726,7 @@ select.no-line { border: none; }
 
 /* container, content */
 .container { display: flex; flex-direction: column; width: 100%; }
-.container .content { padding: 1.875rem 1.25rem 3.125rem; }
+.container .content { padding: 1.875rem 1.25rem 3.125rem; overflow:hidden;}
 .container .content.fixed-footer { padding-bottom: 5.625rem; }
 .container .main-content{padding:1.75rem 0 3.75rem;}
 

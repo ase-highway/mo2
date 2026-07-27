@@ -480,7 +480,7 @@ function btmPopOpen(id, hidden, callback){
   let $sideMenu = $sideMenuWrap.find('.pop-wrap');
   let $close = $sideMenuWrap.find('.close');
   
-  if(!hidden) $(window).scrollTop(0);
+  // if(!hidden) $(window).scrollTop(0);
   $sideMenuWrap.show();
   $sideMenu.slideDown(300, function(){
     if(!hidden) $('html, body').css('overflow','hidden');

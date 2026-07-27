@@ -325,84 +325,93 @@
     <script>
       $.get("common/footer.html", function (data) {
         $(data).appendTo(".wrap");
+        // 이페이지만 퀵메뉴 제거 및  top버튼 고정
+        $('.quick-menu').remove();
+        $('.floating-menu').css('bottom', '4.6875rem')
       });
     </script>
 
 
 
 
+    <div class="product-ordering fixed-bottom">
+      <div class="ordering-box">
+        <div class="ordering-head" onclick="btmPopOpen('#pop-cart-add');">
+          <span class="tit"><i class="ico-order-cart" aria-hidden="true"></i>즉시배송 장바구니</span>
+          <i class="ico-arrow" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
 
     <!-- layer-bottom-popup -->
     <section class="layer-bottom-popup" id="pop-cart-add">
       <div class="dim"></div>
-      <div class="pop-wrap">
+      <div class="pop-wrap product-ordering">
         <div class="popup">
           <div class="pop-body">
-            <div class="product-ordering">
-              <div class="ordering-box">
-                <div class="ordering-head" onclick="btmPopClose('#pop-cart-add');">
-                  <span class="tit"><i class="ico-order-cart" aria-hidden="true"></i>즉시배송 장바구니</span>
-                  <i class="ico-arrow" aria-hidden="true"></i>
-                </div>
-                <ul class="ordering-list">
-                  <li>
-                    <div class="qty-area">
-                      <button type="button" class="btn-qty minus"></button>
-                      <input type="number" class="qty" value="2" title="수량">
-                      <button type="button" class="btn-qty plus"></button>
-                    </div>
-                    <p class="name">감귤 5kg/박스</p>
-                    <button type="button" class="btn-del"></button>
-                  </li>
-                  <li>
-                    <div class="qty-area">
-                      <button type="button" class="btn-qty minus"></button>
-                      <input type="number" class="qty" value="2" title="수량">
-                      <button type="button" class="btn-qty plus"></button>
-                    </div>
-                    <p class="name">감귤 5kg/박스</p>
-                    <button type="button" class="btn-del"></button>
-                  </li>
-                  <li>
-                    <div class="qty-area">
-                      <button type="button" class="btn-qty minus"></button>
-                      <input type="number" class="qty" value="2" title="수량">
-                      <button type="button" class="btn-qty plus"></button>
-                    </div>
-                    <p class="name">감귤 5kg/박스</p>
-                    <button type="button" class="btn-del"></button>
-                  </li>
-                  <li>
-                    <div class="qty-area">
-                      <button type="button" class="btn-qty minus"></button>
-                      <input type="number" class="qty" value="2" title="수량">
-                      <button type="button" class="btn-qty plus"></button>
-                    </div>
-                    <p class="name">감귤 5kg/박스</p>
-                    <button type="button" class="btn-del"></button>
-                  </li>
-                  <li>
-                    <div class="qty-area">
-                      <button type="button" class="btn-qty minus"></button>
-                      <input type="number" class="qty" value="2" title="수량">
-                      <button type="button" class="btn-qty plus"></button>
-                    </div>
-                    <p class="name">감귤 5kg/박스</p>
-                    <button type="button" class="btn-del"></button>
-                  </li>
-                  <li>
-                    <div class="qty-area">
-                      <button type="button" class="btn-qty minus"></button>
-                      <input type="number" class="qty" value="2" title="수량">
-                      <button type="button" class="btn-qty plus"></button>
-                    </div>
-                    <p class="name">감귤 5kg/박스</p>
-                    <button type="button" class="btn-del"></button>
-                  </li>
-                </ul>
-                <div class="ordering-foot">
-                  <button type="button" class="btn-total">총 120,370원</button>
-                </div>
+            <div class="ordering-box">
+              <div class="ordering-head" onclick="btmPopClose('#pop-cart-add');">
+                <span class="tit"><i class="ico-order-cart" aria-hidden="true"></i>즉시배송 장바구니</span>
+                <i class="ico-arrow" aria-hidden="true"></i>
+              </div>
+              <ul class="ordering-list">
+                <li>
+                  <div class="qty-area">
+                    <button type="button" class="btn-qty minus"></button>
+                    <input type="number" class="qty" value="2" title="수량">
+                    <button type="button" class="btn-qty plus"></button>
+                  </div>
+                  <p class="name">감귤 5kg/박스</p>
+                  <button type="button" class="btn-del"></button>
+                </li>
+                <li>
+                  <div class="qty-area">
+                    <button type="button" class="btn-qty minus"></button>
+                    <input type="number" class="qty" value="2" title="수량">
+                    <button type="button" class="btn-qty plus"></button>
+                  </div>
+                  <p class="name">감귤 5kg/박스</p>
+                  <button type="button" class="btn-del"></button>
+                </li>
+                <li>
+                  <div class="qty-area">
+                    <button type="button" class="btn-qty minus"></button>
+                    <input type="number" class="qty" value="2" title="수량">
+                    <button type="button" class="btn-qty plus"></button>
+                  </div>
+                  <p class="name">감귤 5kg/박스</p>
+                  <button type="button" class="btn-del"></button>
+                </li>
+                <li>
+                  <div class="qty-area">
+                    <button type="button" class="btn-qty minus"></button>
+                    <input type="number" class="qty" value="2" title="수량">
+                    <button type="button" class="btn-qty plus"></button>
+                  </div>
+                  <p class="name">감귤 5kg/박스</p>
+                  <button type="button" class="btn-del"></button>
+                </li>
+                <li>
+                  <div class="qty-area">
+                    <button type="button" class="btn-qty minus"></button>
+                    <input type="number" class="qty" value="2" title="수량">
+                    <button type="button" class="btn-qty plus"></button>
+                  </div>
+                  <p class="name">감귤 5kg/박스</p>
+                  <button type="button" class="btn-del"></button>
+                </li>
+                <li>
+                  <div class="qty-area">
+                    <button type="button" class="btn-qty minus"></button>
+                    <input type="number" class="qty" value="2" title="수량">
+                    <button type="button" class="btn-qty plus"></button>
+                  </div>
+                  <p class="name">감귤 5kg/박스</p>
+                  <button type="button" class="btn-del"></button>
+                </li>
+              </ul>
+              <div class="ordering-foot">
+                <button type="button" class="btn-total">총 120,370원</button>
               </div>
             </div>
           </div>
